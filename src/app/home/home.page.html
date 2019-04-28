@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+
+<ion-button expand="full" color="light">
+<ion-button color="light" routerLink="/home" routerDirection="root">
+<ion-icon slot="icon-only" name="Home"></ion-icon>
+</ion-button>
+<ion-button color="light" routerLink="/list" routerDirection="root">
+<ion-icon slot="icon-only" name="list"></ion-icon>
+</ion-button>
+<ion-button color="light" routerLink="/pop" routerDirection="root">
+<ion-icon slot="icon-only" name="flame"></ion-icon>
+</ion-button>
+<ion-button color="light" routerLink="/cloud" routerDirection="root">
+<ion-icon slot="icon-only" name="cloud-done"></ion-icon>
+</ion-button>
+<ion-button color="light" routerLink="/user" routerDirection="root">
+<ion-icon slot="icon-only" name="person"></ion-icon>
+</ion-button>
+</ion-button>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <!-- Series em Destaque -->
+
+    <ion-item class="topicos">
+      <ion-icon name="film" item-start></ion-icon>
+      {{teste01}}
+      <ion-badge class="selec" item-end color="danger" >5 topicos</ion-badge>
+    </ion-item>
+
+    <ion-item *ngFor="let papers of wow01">
+      <ion-thumbnail slot="start">
+        <ion-img src="{{ papers.img }}" alt="driver"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ papers.nome }}</h3>
+        <p>{{ papers.title }}</p>
+      </ion-label>
+      <button ion-button clear item-end>
+        <!-- {{ papers.url }}
+        <img src="" alt="driver"> -->
+        view
+      </button>
+    </ion-item>
+
+
+    <!-- Filmes Populares -->
+
+    <ion-item class="topicos">
+      <ion-icon name="film" item-start></ion-icon>
+      {{teste02}}
+      <ion-badge item-end color="danger" rigth class="badge">5 topicos</ion-badge>
+    </ion-item>
+
+    <ion-item *ngFor="let papers of wow02">
+      <ion-thumbnail slot="start">
+        <ion-img src="{{ papers.img }}" alt="driver"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ papers.nome }}</h3>
+        <p>{{ papers.title }}</p>
+      </ion-label>
+      <button ion-button clear item-end> view </button>
+    </ion-item>
+
+    <!-- Desenhos Infanto Juvenis -->
+
+    <ion-item class="topicos">
+      <ion-icon name="film" item-start></ion-icon>
+      {{teste03}}
+      <ion-badge item-end color="danger" rigth>5 topicos</ion-badge>
+    </ion-item>
+
+    <ion-item *ngFor="let papers of wow03">
+      <ion-thumbnail slot="start">
+        <ion-img src="{{ papers.img }}" alt="driver"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ papers.nome }}</h3>
+        <p>{{ papers.title }}</p>
+      </ion-label>
+      <button ion-button clear item-end>
+        <!-- <img src="" alt="driver"> -->
+        view
+      </button>
+    </ion-item>
+
+    <!-- Animes Diversos -->
+
+    <ion-item class="topicos">
+      <ion-icon name="film" item-start></ion-icon>
+      {{teste04}}
+      <ion-badge item-end color="danger" rigth>5 topicos</ion-badge>
+    </ion-item>
+
+    <ion-item *ngFor="let papers of wow04" (click)="testClick()">
+      <ion-thumbnail slot="start">
+        <ion-img src="{{ papers.img }}" alt="driver"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ papers.nome }}</h3>
+        <p>{{ papers.title }}</p>
+      </ion-label>
+      <button ion-button clear item-end>
+        <!-- <img src="" alt="driver"> -->
+        view
+      </button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
