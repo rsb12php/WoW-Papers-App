@@ -5,6 +5,7 @@ export const FIREBASE ={
     databaseURL: "https://wow-papers.firebaseio.com",
     projectId: "wow-papers",
     storageBucket: "wow-papers.appspot.com",
-    messagingSenderId: "809906569357"
+    messagingSenderId: "809906569357",
+    appId: "1:809906569357:web:ab047204b108f87f"
 
 };
