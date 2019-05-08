@@ -1,11 +1,11 @@
 export const FIREBASE ={
 
-    apiKey: "AIzaSyB6gqAEH4BQ6n78r0djWFvXGl_gwqDjvR8",
-    authDomain: "wow-papers.firebaseapp.com",
-    databaseURL: "https://wow-papers.firebaseio.com",
-    projectId: "wow-papers",
-    storageBucket: "wow-papers.appspot.com",
-    messagingSenderId: "809906569357",
-    appId: "1:809906569357:web:ab047204b108f87f"
+    apiKey: "AIzaSyC-3tQbxVsy3n_i9-nj8ZopPNan_A1zJPc",
+    authDomain: "wow-paper.firebaseapp.com",
+    databaseURL: "https://wow-paper.firebaseio.com",
+    projectId: "wow-paper",
+    storageBucket: "wow-paper.appspot.com",
+    messagingSenderId: "447549983747",
+    appId: "1:447549983747:web:4a1f21b0f770f28f"
 
 };
